@@ -58,9 +58,16 @@ const LandingPage = () => {
         <img
           src="./beamrlogo2.png"
           alt="Beamr Logo"
-          className="absolute top-4 left-4 h-16 z-10"
+          className="logo absolute top-4 left-4 h-16 z-10"
         />
-        <QRCode url="https://tawebstudio.com" />
+        {/* QR Code - positioned right on desktop, centered on mobile */}
+        <div className="absolute top-1/2 right-8 transform -translate-y-1/2 md:block hidden">
+          <QRCode url="https://tawebstudio.com" />
+        </div>
+        {/* Mobile QR Code */}
+        <div className="md:hidden block">
+          <QRCode url="https://tawebstudio.com" />
+        </div>{" "}
         <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2">
           <div className="profile-container">
             <img
