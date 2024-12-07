@@ -55,11 +55,16 @@ const LandingPage = () => {
     <div className="min-h-screen bg-gray-100">
       {/* Cover Photo Section */}
       <div className="coverphoto relative h-64">
+        <img
+          src="./beamrlogo2.png"
+          alt="Beamr Logo"
+          className="absolute top-4 left-4 h-16 z-10"
+        />
         <QRCode url="https://tawebstudio.com" />
         <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2">
           <div className="profile-container">
             <img
-              src="../public/profile2.png"
+              src="./profile2.png"
               alt="Profile picture"
               className="profile-image"
             />
